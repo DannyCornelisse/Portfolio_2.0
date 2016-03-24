@@ -1,0 +1,32 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-connect": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-htmlhint": "^0.9.12-fix"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DannyCornelisse/Portfolio_2.0.git"
+  },
+  "author": "Danny Cornelisse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DannyCornelisse/Portfolio_2.0/issues"
+  },
+  "homepage": "https://github.com/DannyCornelisse/Portfolio_2.0#readme"
+}
