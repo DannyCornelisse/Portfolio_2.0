@@ -11,7 +11,7 @@ module.exports = function (grunt) {
                 options: {
                     port: 6003,
                     base: './',
-                    livereload: false,
+                    livereload: true,
                     open: {
                         target: 'http://localhost:6003'
                     }
@@ -49,8 +49,10 @@ module.exports = function (grunt) {
             }
         },
         sass: {
-            files: {
-                    'css/style.css': 'sass/*.scss'
+            dist: {
+                files: {
+                    'css/style.css': ['sass/style.scss']
+                }
             }
         },
         uglify: {
@@ -89,4 +91,5 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('default', ['sass','cssmin', 'jshint', 'htmlhint', 'connect', 'watch']);
+
 };
