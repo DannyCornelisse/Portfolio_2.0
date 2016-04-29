@@ -1,0 +1,32 @@
+.home-section {
+	background: url("../img/home-background.jpg") no-repeat;
+	position: relative;
+	min-height: calc(75vh - 75px);
+	border-bottom: 5px solid $tory-blue-darkest;
+
+	.home-overlay {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		background: $golden-bell;
+		opacity: 0.6;
+	}
+
+	.about {
+		position: relative;
+		overflow: hidden;
+		margin: 40px auto;
+		width: 60%;
+		background: rgba(255, 255, 255, .6);
+
+		.about-text {
+			width: 90%;
+			margin: 20px auto;
+			span{
+				font-size: 18px;
+				font-weight: 500;
+				color: $tory-blue;
+			}
+		}
+	}
+}

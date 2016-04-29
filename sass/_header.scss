@@ -1,3 +1,39 @@
 .header {
-	background: #3E7398;
+	background: $tory-blue-darkest;
+	overflow: hidden;
+	height:75px; 
+
+	.header-name {
+		font-size: 20px;
+		font-weight: 300;
+	    float: left;
+	    color: $white;
+	    margin: 25px 0 0 20px;
+	    border-bottom: 5px solid $golden-bell;
+	}
 }
+
+.navigation-list {
+	float: right;
+	line-height: 75px;
+	margin: 0 15px;
+
+	.navigation-list-item {
+		list-style-type: none;
+		display: inline;
+		margin-left: 10px;
+
+		&:hover {
+			background: $tory-blue-darker;
+		}
+
+		a {
+			text-decoration: none;
+			color: $white;
+			font-weight: normal;
+			font-size: 18px;
+		}
+	}
+}
+
+
