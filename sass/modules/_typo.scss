@@ -15,14 +15,34 @@ h2 {
 	margin: 20px auto 0px auto;
 	color: $tory-blue;
 	font-weight: 300;
-
-	.title-underscore {
-		font-size: 34px;
-		color: $golden-bell;
-	}
+	
+	
 }
 
 p {
 	font-size: 16px;
 }
 
+
+
+@keyframes blink {
+	from {
+		opacity:0;
+	}
+
+	to {
+		opacity:1;
+	}
+}
+
+.title-underscore {
+	display: inline;
+	font-size: 28px;
+	line-height: 28px;
+	color: $golden-bell;
+	animation-name: blink;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: initial;
+
+}

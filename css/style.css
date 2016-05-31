@@ -11,12 +11,24 @@ h2 {
   margin: 20px auto 0px auto;
   color: #115B8F;
   font-weight: 300; }
-  h2 .title-underscore {
-    font-size: 34px;
-    color: #E0840D; }
 
 p {
   font-size: 16px; }
+
+@keyframes blink {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.title-underscore {
+  display: inline;
+  font-size: 28px;
+  line-height: 28px;
+  color: #E0840D;
+  animation-name: blink;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: initial; }
 
 .header {
   background: #252F36;
@@ -46,35 +58,43 @@ p {
       font-weight: normal;
       font-size: 18px; }
 
+body {
+  background: url("../img/home-background.jpg") no-repeat; }
+
 .home-section {
-  background: url("../img/home-background.jpg") no-repeat;
   position: relative;
-  min-height: calc(75vh - 75px);
-  border-bottom: 5px solid #252F36; }
-  .home-section .home-overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: #E0840D;
-    opacity: 0.6; }
-  .home-section .about {
-    position: relative;
-    overflow: hidden;
-    margin: 40px auto;
-    width: 60%;
-    background: rgba(255, 255, 255, 0.6); }
-    .home-section .about .about-text {
-      width: 90%;
-      margin: 20px auto; }
-      .home-section .about .about-text span {
-        font-size: 18px;
-        font-weight: 500;
-        color: #33872A; }
+  border-bottom: 5px solid #252F36;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.home-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: #115B8F;
+  opacity: 0.4;
+  left: 0; }
+
+.about {
+  position: relative;
+  margin: 80px auto;
+  overflow: hidden;
+  width: 60%;
+  min-height: calc(100vh - 235px);
+  background: rgba(255, 255, 255, 0.7); }
+  .about .text {
+    width: 90%;
+    margin: 20px auto; }
+    .about .text span {
+      font-size: 18px;
+      font-weight: 500;
+      color: #33872A; }
 
 .skills-section {
-  background: linear-gradient(#264D6A, #FFF); }
+  background: #FFF; }
   .skills-section .skills-title {
-    color: #FFF; }
+    color: #115B8F; }
 
 .projects-section {
   background: #FFF; }

@@ -1,0 +1,41 @@
+body {
+	background: url("../img/home-background.jpg") no-repeat;
+
+}
+
+.home-section {
+	position: relative;
+	border-bottom: 5px solid $tory-blue-darkest;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-overlay {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background: $tory-blue;
+	opacity: 0.4;
+	left: 0;
+}
+
+.about {
+	position: relative;
+	margin: 80px auto;
+	overflow: hidden;
+	width: 60%;
+	min-height: calc(100vh - 235px);
+	background: rgba(255, 255, 255, .7);
+
+	.text {
+		width: 90%;
+		margin: 20px auto;
+		
+		span{
+			font-size: 18px;
+			font-weight: 500;
+			color: $malachite-darker;
+		}
+	}
+}
