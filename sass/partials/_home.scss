@@ -2,9 +2,10 @@
 	background: url("../img/home-background.jpg") no-repeat;
 	position: relative;
 	display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: calc(100vh - 106px);
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 100px);
+	margin-bottom: 0;
 }
 
 .home-overlay {
@@ -54,7 +55,7 @@
 			span {
 				font-size: 28px;
 				font-weight: bold;
-				color: orange;
+				color: $orange;
 			}
 		}
 	}

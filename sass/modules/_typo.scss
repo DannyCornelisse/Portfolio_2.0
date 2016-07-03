@@ -9,6 +9,7 @@
 section {
 	overflow: hidden;
 	margin-bottom: 80px;
+	background: #FFF;
 }
 
 
@@ -27,6 +28,7 @@ h2 {
 
 p {
 	font-size: 24px;
+	color: $grey;
 }
 
 
@@ -39,8 +41,8 @@ p {
 
 .title-underscore {
 	display: inline;
-	font-size: 28px;
-	line-height: 28px;
+	font-size: 50px;
+	line-height: 50px;
 	color: black;
 	animation-name: blink;
 	animation-duration: 1s;

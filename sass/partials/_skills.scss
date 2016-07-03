@@ -1,7 +1,15 @@
 .skills-section {
-	background: white;
+	.skills-wrapper {
+		margin-top: 40px;
+		background: $light-grey;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
 
-	.skills-title {
-		color: blue;
+		.skill {
+			display: inline-block;
+			height: 175px;
+			margin: 55px;
+		}
 	}
 }
