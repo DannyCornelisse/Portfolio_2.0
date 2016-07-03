@@ -1,41 +1,61 @@
-body {
-	background: url("../img/home-background.jpg") no-repeat;
-
-}
-
 .home-section {
+	background: url("../img/home-background.jpg") no-repeat;
 	position: relative;
-	border-bottom: 5px solid $tory-blue-darkest;
 	display: flex;
     align-items: center;
     justify-content: center;
+    min-height: calc(100vh - 106px);
 }
 
 .home-overlay {
 	height: 100%;
 	width: 100%;
 	position: absolute;
-	background: $tory-blue;
+	background: #000;
 	opacity: 0.4;
 	left: 0;
 }
 
-.about {
-	position: relative;
-	margin: 80px auto;
-	overflow: hidden;
-	width: 60%;
-	min-height: calc(100vh - 235px);
-	background: rgba(255, 255, 255, .7);
+.about-section {
+	padding: 45px 80px;
+	margin: 0 0 35px 0;
 
-	.text {
-		width: 90%;
-		margin: 20px auto;
-		
-		span{
-			font-size: 18px;
-			font-weight: 500;
-			color: $malachite-darker;
+	.profile-picture {
+		width: 40%;
+		float: left;
+		border: 12px solid $light-blue;
+		margin: 0 40px 0 0;
+	}
+
+	.about-me {
+		float: left;
+		margin: 0;
+		overflow: hidden;
+		width: 55%;
+
+		h2 {
+			margin: 0 auto;
+			display: inline;
+			width: auto;
+			padding: 10px 30px;
+			border-bottom: 4px solid $light-blue;
+			font-size: 50px;
+			font-weight: 700;
+
+			.title-underscore {
+				font-size: 50px;
+			}
+		}
+
+		.text {
+			width: 100%;
+			margin: 75px auto 0 auto;
+			
+			span {
+				font-size: 28px;
+				font-weight: bold;
+				color: orange;
+			}
 		}
 	}
 }
