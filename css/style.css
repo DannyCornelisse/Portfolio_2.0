@@ -13,8 +13,9 @@ h2 {
   color: #474747;
   text-transform: uppercase;
   margin: 0 auto;
-  display: inline-block;
+  display: block;
   width: auto;
+  max-width: 32%;
   padding: 10px 30px;
   border-bottom: 4px solid #4EC7DD;
   font-size: 50px;
@@ -126,12 +127,13 @@ p {
   .projects-section .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 80px; }
     .projects-section .projects-wrapper .projects {
       display: inline-block;
       width: 32vw;
       height: 32vw;
-      border: 2px solid #fff;
+      border: 10px solid #fff;
       -webkit-filter: grayscale(100%);
       /* Chrome, Safari, Opera */
       filter: grayscale(100%); }
@@ -165,5 +167,26 @@ p {
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center; }
+
+.contact {
+  margin-bottom: 0; }
+
+.contact-wrapper {
+  display: inline-block;
+  width: 50%;
+  float: left; }
+
+.contact-form {
+  display: inline-block;
+  width: 50%;
+  float: left; }
+  .contact-form input, .contact-form textarea {
+    display: block;
+    text-align: left;
+    padding: 5px;
+    border: 1px solid #4EC7DD;
+    margin: 5px; }
+  .contact-form input {
+    width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

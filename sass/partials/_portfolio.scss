@@ -5,12 +5,13 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		margin-top: 80px;
 		
 		.projects {
 			display: inline-block;
 			width: 32vw;
 			height: 32vw;
-			border: 2px solid #fff;
+			border: 10px solid #fff;
 			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
     		filter: grayscale(100%);
 		}
