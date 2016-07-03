@@ -1,0 +1,60 @@
+.projects-section {
+	background: white;
+
+	.projects-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		
+		.projects {
+			display: inline-block;
+			width: 32vw;
+			height: 32vw;
+			border: 2px solid #fff;
+			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    		filter: grayscale(100%);
+		}
+		.hhs, .codepamoja, .ftsf, .competa, .mijntoernooi {
+			&:hover {
+				-webkit-filter: grayscale(0%); /* Chrome, Safari, Opera */
+				filter: grayscale(0%);
+				background-size:contain;
+			}
+		}
+		.hhs {
+			background: url("../img/hhs-background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			    background-position: center;
+
+		}
+		.codepamoja {
+			background: url("../img/cp-background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			    background-position: center;
+	
+		}
+		.ftsf {
+			background: url("../img/ftsf-background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			    background-position: center;
+
+		}
+		.competa {
+			background: url("../img/competa-background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			    background-position: center;
+
+		}
+		.mijntoernooi {
+			background: url("../img/ftsf-background.png");
+			background-size: cover;
+			background-repeat: no-repeat;
+			    background-position: center;
+
+		}
+	}
+}

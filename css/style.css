@@ -22,7 +22,7 @@ h2 {
 
 p {
   font-size: 24px;
-  color: #B6B6B6; }
+  color: #3E3E3E; }
 
 @keyframes blink {
   0% {
@@ -123,7 +123,47 @@ p {
 
 .projects-section {
   background: white; }
-  .projects-section img {
-    display: block; }
+  .projects-section .projects-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .projects-section .projects-wrapper .projects {
+      display: inline-block;
+      width: 32vw;
+      height: 32vw;
+      border: 2px solid #fff;
+      -webkit-filter: grayscale(100%);
+      /* Chrome, Safari, Opera */
+      filter: grayscale(100%); }
+    .projects-section .projects-wrapper .hhs:hover, .projects-section .projects-wrapper .codepamoja:hover, .projects-section .projects-wrapper .ftsf:hover, .projects-section .projects-wrapper .competa:hover, .projects-section .projects-wrapper .mijntoernooi:hover {
+      -webkit-filter: grayscale(0%);
+      /* Chrome, Safari, Opera */
+      filter: grayscale(0%);
+      background-size: contain; }
+    .projects-section .projects-wrapper .hhs {
+      background: url("../img/hhs-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .projects-section .projects-wrapper .codepamoja {
+      background: url("../img/cp-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .projects-section .projects-wrapper .ftsf {
+      background: url("../img/ftsf-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .projects-section .projects-wrapper .competa {
+      background: url("../img/competa-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
+    .projects-section .projects-wrapper .mijntoernooi {
+      background: url("../img/ftsf-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center; }
 
 /*# sourceMappingURL=style.css.map */
