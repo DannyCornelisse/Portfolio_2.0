@@ -1,5 +1,6 @@
 .home-section {
 	background: url("../img/home-background.jpg") no-repeat;
+	background-size: cover;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -21,36 +22,23 @@
 	padding: 45px 80px;
 	margin: 0 0 35px 0;
 
-	.profile-picture {
-		width: 40%;
-		float: left;
-		border: 12px solid $light-blue;
-		margin: 0 40px 0 0;
-	}
-
 	.about-me {
 		float: left;
 		margin: 0;
 		overflow: hidden;
 		width: 55%;
-
-		h2 {
-			margin: 0 auto;
-			display: inline;
-			width: auto;
-			padding: 10px 30px;
-			border-bottom: 4px solid $light-blue;
-			font-size: 50px;
-			font-weight: 700;
-
-			.title-underscore {
-				font-size: 50px;
-			}
+		@media screen and (max-width: 1000px) {
+			float: none;
+   			margin: 20px auto 0;
+    		width: 100%;
 		}
 
 		.text {
 			width: 100%;
 			margin: 75px auto 0 auto;
+			@media screen and (max-width: 1000px) {
+			    margin: 25px auto 0;
+			}
 			
 			span {
 				font-size: 28px;
@@ -60,3 +48,19 @@
 		}
 	}
 }
+
+
+.profile-picture {
+	width: 40%;
+	float: left;
+	border: 12px solid $light-blue;
+	margin: 0 40px 0 0;
+
+	@media screen and (max-width: 1000px) {
+		width: 50%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+}
+

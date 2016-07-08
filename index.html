@@ -2,12 +2,12 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/css/style.min.css">
 		<title>Danny Cornelisse Portfolio</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 
 	<body>
@@ -72,27 +72,47 @@
 			</div>
 		</section>				
 
-		<section class="contact">
-			<h2>Contact<span class="title-underscore">_</span></h2>
+		<section class="contact" id="contact">
+			<h2 class="contact-title">Contact<span class="title-underscore">_</span></h2>
 			<div class="contact-wrapper">
-				<p class="contact-text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
-				</p>
-				<div class="social-wrapper">
-					
+				<div class="contact-info">
+					<p class="contact-text">
+						Lorem ipsum dolor sit amet, contact me
+					</p>
+					<div class="social-wrapper">
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+						<div class="social-icon">
+							<i class="fa fa-linkedin" aria-hidden="true"></i>
+						</div>
+					</div>
 				</div>
 			</div>
 
 			<form class="contact-form">
-				<input type="text" placeholder="NAME.." required>
-				<input type="email" placeholder="EMAIL.." required>
-				<textarea placeholder="MESSAGE.." required></textarea>
-				<input type="submit" value="SEND">
+				<input type="text" class="contact-form-name" placeholder="NAME.." required>
+				<input type="email" class="contact-form-email" placeholder="EMAIL.." required>
+				<textarea class="contact-form-message" placeholder="MESSAGE.." required></textarea>
+				<input type="submit" class="contact-form-btn" value="SEND">
 			</form>
-			<span class="footer-copyright">Danny Cornelisse - 2016</span>
+			
 		</section>
+		<footer class="footer">
+			<span class="footer-copyright">Danny Cornelisse - 2016</span>
+		</footer>
 		<script src="//localhost:35729/livereload.js"></script>
 	</body>
 </html>

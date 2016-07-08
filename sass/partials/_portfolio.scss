@@ -4,7 +4,7 @@
 	.projects-wrapper {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: center;
+		justify-content: flex-start;
 		margin-top: 80px;
 		
 		.projects {
@@ -13,7 +13,15 @@
 			height: 32vw;
 			border: 10px solid #fff;
 			-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-    		filter: grayscale(100%);
+			filter: grayscale(100%);
+
+			.project-description {
+				display: block;
+			}
+
+			&:hover {
+				border: 3px solid $light-blue;
+			}
 		}
 		.hhs, .codepamoja, .ftsf, .competa, .mijntoernooi {
 			&:hover {
@@ -24,37 +32,37 @@
 		}
 		.hhs {
 			background: url("../img/hhs-background.png");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			    background-position: center;
+			background-position: center;
 
 		}
 		.codepamoja {
 			background: url("../img/cp-background.png");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			    background-position: center;
+			background-position: center;
 	
 		}
 		.ftsf {
 			background: url("../img/ftsf-background.png");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			    background-position: center;
+			background-position: center;
 
 		}
 		.competa {
 			background: url("../img/competa-background.png");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			    background-position: center;
+			background-position: center;
 
 		}
 		.mijntoernooi {
 			background: url("../img/ftsf-background.png");
-			background-size: cover;
+			background-size: contain;
 			background-repeat: no-repeat;
-			    background-position: center;
+			background-position: center;
 
 		}
 	}

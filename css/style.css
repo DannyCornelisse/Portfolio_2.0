@@ -13,9 +13,8 @@ h2 {
   color: #474747;
   text-transform: uppercase;
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   width: auto;
-  max-width: 32%;
   padding: 10px 30px;
   border-bottom: 4px solid #4EC7DD;
   font-size: 50px;
@@ -46,25 +45,48 @@ p {
 .header {
   background: #FFF;
   overflow: hidden;
-  height: 100px;
-  border-bottom: 6px solid #4EC7DD; }
+  height: 75px;
+  border-bottom: 6px solid #4EC7DD;
+  display: block;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  background: #FFF; }
 
 .navigation-list {
-  line-height: 100px;
-  margin: 0 15px; }
+  line-height: 75px;
+  margin: 0 15px;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between; }
   .navigation-list .navigation-list-item {
     list-style-type: none;
     display: inline;
-    margin-left: 5%;
-    margin-right: 5%; }
+    flex-grow: 1;
+    position: relative; }
+    .navigation-list .navigation-list-item:hover:after {
+      content: "";
+      position: absolute;
+      top: 61%;
+      left: calc(50% - 10px);
+      border-width: 10px;
+      border-style: solid;
+      border-color: #4EC7DD transparent transparent transparent;
+      transform: scale(1, -1); }
     .navigation-list .navigation-list-item a {
       text-decoration: none;
-      color: black;
+      color: #000;
       font-weight: 300;
-      font-size: 38px; }
+      font-size: 30px; }
+      @media screen and (max-width: 790px) {
+        .navigation-list .navigation-list-item a {
+          font-size: 24px; } }
 
 .home-section {
   background: url("../img/home-background.jpg") no-repeat;
+  background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
@@ -83,33 +105,38 @@ p {
 .about-section {
   padding: 45px 80px;
   margin: 0 0 35px 0; }
-  .about-section .profile-picture {
-    width: 40%;
-    float: left;
-    border: 12px solid #4EC7DD;
-    margin: 0 40px 0 0; }
   .about-section .about-me {
     float: left;
     margin: 0;
     overflow: hidden;
     width: 55%; }
-    .about-section .about-me h2 {
-      margin: 0 auto;
-      display: inline;
-      width: auto;
-      padding: 10px 30px;
-      border-bottom: 4px solid #4EC7DD;
-      font-size: 50px;
-      font-weight: 700; }
-      .about-section .about-me h2 .title-underscore {
-        font-size: 50px; }
+    @media screen and (max-width: 1000px) {
+      .about-section .about-me {
+        float: none;
+        margin: 20px auto 0;
+        width: 100%; } }
     .about-section .about-me .text {
       width: 100%;
       margin: 75px auto 0 auto; }
+      @media screen and (max-width: 1000px) {
+        .about-section .about-me .text {
+          margin: 25px auto 0; } }
       .about-section .about-me .text span {
         font-size: 28px;
         font-weight: bold;
         color: #FF5907; }
+
+.profile-picture {
+  width: 40%;
+  float: left;
+  border: 12px solid #4EC7DD;
+  margin: 0 40px 0 0; }
+  @media screen and (max-width: 1000px) {
+    .profile-picture {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+      float: none; } }
 
 .skills-section .skills-wrapper {
   margin-top: 40px;
@@ -127,7 +154,7 @@ p {
   .projects-section .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     margin-top: 80px; }
     .projects-section .projects-wrapper .projects {
       display: inline-block;
@@ -137,6 +164,10 @@ p {
       -webkit-filter: grayscale(100%);
       /* Chrome, Safari, Opera */
       filter: grayscale(100%); }
+      .projects-section .projects-wrapper .projects .project-description {
+        display: block; }
+      .projects-section .projects-wrapper .projects:hover {
+        border: 3px solid #4EC7DD; }
     .projects-section .projects-wrapper .hhs:hover, .projects-section .projects-wrapper .codepamoja:hover, .projects-section .projects-wrapper .ftsf:hover, .projects-section .projects-wrapper .competa:hover, .projects-section .projects-wrapper .mijntoernooi:hover {
       -webkit-filter: grayscale(0%);
       /* Chrome, Safari, Opera */
@@ -144,49 +175,88 @@ p {
       background-size: contain; }
     .projects-section .projects-wrapper .hhs {
       background: url("../img/hhs-background.png");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
     .projects-section .projects-wrapper .codepamoja {
       background: url("../img/cp-background.png");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
     .projects-section .projects-wrapper .ftsf {
       background: url("../img/ftsf-background.png");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
     .projects-section .projects-wrapper .competa {
       background: url("../img/competa-background.png");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
     .projects-section .projects-wrapper .mijntoernooi {
       background: url("../img/ftsf-background.png");
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       background-position: center; }
 
-.contact {
-  margin-bottom: 0; }
+.contact .contact-wrapper {
+  display: block;
+  margin-top: 80px; }
 
-.contact-wrapper {
+.social-wrapper {
+  display: flex;
+  justify-content: center; }
+  .social-wrapper .social-icon {
+    background: #63DCFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin: 0 4px; }
+
+.contact-info {
   display: inline-block;
   width: 50%;
   float: left; }
+  .contact-info .contact-text {
+    font-size: 28px;
+    width: 80%;
+    margin: 75px auto;
+    color: #3E3E3E; }
 
 .contact-form {
   display: inline-block;
   width: 50%;
   float: left; }
-  .contact-form input, .contact-form textarea {
+  .contact-form-name, .contact-form-email, .contact-form-message {
     display: block;
     text-align: left;
     padding: 5px;
     border: 1px solid #4EC7DD;
-    margin: 5px; }
-  .contact-form input {
-    width: 50%; }
+    margin: 15px 0;
+    width: 75%;
+    padding: 10px; }
+  .contact-form-message {
+    height: 150px; }
+  .contact-form-btn {
+    width: 25%;
+    float: left;
+    margin-left: 50%;
+    border: 2px solid #4EC7DD;
+    background: #4EC7DD;
+    color: #FFF; }
+
+.footer {
+  background: #474747;
+  color: #FFF;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */
